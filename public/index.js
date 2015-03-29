@@ -8,6 +8,7 @@
     keycodes['37'] = 'left';
     keycodes['39'] = 'right';
     keycodes['32'] = 'demoralize';
+    keycodes['13'] = 'fire';
 
     function sendCommand(command) {
         socket.emit('command', {
@@ -17,10 +18,6 @@
     };
     document.addEventListener('keyup', function(key) {
         sendCommand('stop');
-    });
-
-    document.querySelector('#top-triangle').addEventListener('click', function() {
-        sendCommand('fire');
     });
 
     document.addEventListener('keydown', function(key) {
