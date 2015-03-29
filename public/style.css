@@ -1,0 +1,68 @@
+body {
+    background-color: #EDB101;
+}
+#logo {
+  margin-top: 5%;
+  margin-left: 30%;
+  float: left;
+  width: 480px;
+  height: 480px;
+  background: black;
+  border-radius: 50%;
+  border: solid 5px black;
+  position: relative;
+}
+
+.triangle {
+  position: absolute;
+  height: 0;
+  width: 0px;
+  border-bottom: 210px solid #EDB101;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+
+#top-triangle {
+  transform: rotate( 180deg );
+  left: 140px;
+  top: 28px;
+}
+
+#left-triangle {
+  transform: rotate( 180deg );
+  left: 40px;
+  top: 238px;
+}
+
+#right-triangle {
+  transform: rotate( 180deg );
+  left: 240px;
+  top: 238px;
+}
+
+#logo div:before {
+  width: 110px;
+  height: 106px;
+  left: 50%;
+  top: 50%;
+  margin-left: -55px;
+  margin-top: -55px;
+  background-image: radial-gradient(circle at 38px 38px, #333 10px, transparent 10px), radial-gradient(circle at 73px 73px, #333 10px, transparent 10px), radial-gradient(circle at 38px 73px, #333 10px, transparent 10px), radial-gradient(circle at 73px 38px, #333 10px, transparent 10px);
+  border-radius: 50%;
+  border-top: 1px solid rgba(0,0,0,0.6);
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+  box-shadow: inset 0 20px 2px rgba(255,255,255,0.3), 3px -15px 7px -4px rgba(0,0,0,0.3), 0 -14px 10px 5px #45b3e0, 0 2px 5px 5px #87ceeb, 0 10px 5px 5px rgba(255,255,255,0.6);
+}
+
+#logo div:after {
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: 50%;
+  margin-left: -25px;
+  margin-top: -23px;
+  background-image: linear-gradient(to right, transparent 35%, #000080 35%, #4682b4 40%, #000080 45%, #4682b4 50%, #000080 55%, #4682b4 60%, #000080 65%, transparent 65%), linear-gradient(to bottom, transparent 35%, #000080 35%, #4682b4 40%, #000080 45%, #4682b4 50%, #000080 55%, #4682b4 60%, #000080 65%, transparent 65%);
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
